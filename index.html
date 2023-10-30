@@ -83,6 +83,9 @@
                                     </button>
                                 </h2>
                                 <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+
+                                    <h2> Select your pizza size.</h2>
+
                                     <input type="radio" id="personal" name="size" value="personal">
                                     <label for="personal">Personal</label><br>
                                     <input type="radio" id="small" name="size" value="small">
@@ -101,6 +104,8 @@
                                     </button>
                                 </h2>
                                 <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <h2>Select your crust style.</h2>
+
                                     <input type="radio" id="regular" name="pizzaCrust" value="regular">
                                     <label for="regular">Regular</label><br>
 
@@ -127,15 +132,32 @@
 
                     <div class="tab-pane fade" id="cheeseandsauce" role="tabpanel" aria-labelledby="cheeseandsauce-tab" tabindex="0">
 
-                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion accordion-flush" id="cheese">
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                        Accordion Item #1
+                                        Cheese
                                     </button>
                                 </h2>
                                 <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                                    <div class="accordion-body">
+                                        <h2>Pick your cheese.</h2>
+
+                                        <input type="checkbox" id="mozzarella" name="mozzarella" value="mozzarella">
+                                        <label for="mozzarella">Mozzarella</label><br>
+
+
+                                        <h2> Select your cheese amount.</h2>
+                                        <select name="cheese-preference" class="cheese-selector">
+                                            <option value="light">Light</option>
+                                            <option value="regular">Regular</option>
+                                            <option value="blasted">Blasted</option>
+
+                                        </select>
+
+
+
+                                    </div>
                                 </div>
                             </div>
                             <div class="accordion-item">
