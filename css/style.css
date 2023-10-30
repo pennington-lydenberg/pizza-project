@@ -40,6 +40,15 @@ h1 {
 .cheese-selector{
     padding: 5px;
     justify-content: stretch;
+
+
+}
+
+.accordion-body{
+    display: flex;
+    flex-direction: column;
+
+    flex: 1 0 0;
 }
 
 
