@@ -55,20 +55,91 @@
     <section class="container-fluid pizzaSelection">
         <div class="row">
             <div class="col">
-                <ul class="nav nav-tabs">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Active</a>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Size & Crust</button>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Cheese & Sauce</button>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Galactic Toppings</button>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                    </li>
+
                 </ul>
+
+                <div class="tab-content" id="myTabContent">
+
+                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        Pizza Size
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <input type="radio" id="personal" name="size" value="personal">
+                                    <label for="personal">Personal</label><br>
+                                    <input type="radio" id="small" name="size" value="small">
+                                    <label for="small">Small</label><br>
+                                    <input type="radio" id="medium" name="size" value="medium">
+                                    <label for="medium">Medium</label><br>
+                                    <input type="radio" id="large" name="size" value="large">
+                                    <label for="large">Large</label><br>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                        DA CRUST
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <input type="radio" id="regular" name="pizzaCrust" value="regular">
+                                    <label for="regular">Regular</label><br>
+
+                                    <input type="radio" id="stuffedCrust" name="pizzaCrust" value="stuffedCrust">
+                                    <label for="stuffedCrust">Stuffed Crust</label><br>
+
+                                    <input type="radio" id="garlicCrust" name="pizzaCrust" value="garlicCrust">
+                                    <label for="garlicCrust">Garlic Crust</label><br>
+
+                                    <input type="radio" id="galacticCrust" name="pizzaCrust" value="galacticCrust">
+                                    <label for="galacticCrust">Galactic Crust</label><br>
+
+                                    <input type="radio" id="thinCrust" name="pizzaCrust" value="thinCrust">
+                                    <label for="galacticCrust">Thin Crust</label><br>
+
+                                    <input type="radio" id="deepDish" name="pizzaCrust" value="DeepDish">
+                                    <label for="galacticCrust">Deep Space Dish</label><br>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                        Accordion Item #3
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+
+                    </div>
+
+                    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
+
+                    <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">...</div>
+
+                </div>
             </div>
         </div>
     </section>
