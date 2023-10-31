@@ -77,7 +77,20 @@ h1 {
     flex-direction: column;
 }
 
+.number-icon{
+    width: 25px;
+    height: 25px;
+    background-color: yellow;
+    border-radius: 10px;
+}
+.number-icon p{
+    color: #3855bd;
+    font-weight: 700;
 
+}
 
+.text-end #search{
+    color: #343a82;
+}
 
 
