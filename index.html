@@ -19,9 +19,9 @@
                 </div>
 
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 pizzaLinks">
-                    <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
-                    <li><a href="#" class="nav-link px-2 text-secondary">Features</a></li>
-                    <li><a href="#" class="nav-link px-2 text-secondary">Pricing</a></li>
+                    <li><a href="#" class="nav-link px-2 text-secondary">Menu</a></li>
+                    <li><a href="#" class="nav-link px-2 text-secondary">About</a></li>
+                    <li><a href="#" class="nav-link px-2 text-secondary">Catering</a></li>
                 </ul>
 
                 <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
@@ -29,7 +29,7 @@
                 </form>
 
                 <div class="text-end">
-                    <button type="button" id="search" class="btn btn-outline-secondary me-2">Search</button>
+                    <button type="button" id="search" class="btn btn-outline-secondary me-2">Search for a Planet near me</button>
                     <button type="button" class="btn btn-warning">Log-In</button>
                 </div>
             </div>
@@ -220,25 +220,43 @@
                                     </button>
                                 </h2>
                                 <div id="flush-toppings" class="accordion-collapse collapse" data-bs-parent="#accordiontoppings">
-                                    <h2> Pick your meat.</h2>
-                                    <input type="checkbox" id="pepperoni" name="pepperoni" value="pepperoni">
-                                    <label for="pepperoni">Pepperoni</label><br>
-                                    <input type="checkbox" id="sausage" name="sausage" value="sausage">
-                                    <label for="sausage">Sausage</label><br>
-                                    <input type="checkbox" id="bacon" name="bacon" value="bacon">
-                                    <label for="bacon">Bacon</label><br>
-                                    <input type="checkbox" id="ham" name="ham" value="ham">
-                                    <label for="ham">Ham</label><br>
+                                    <div class="meatsandveg">
+                                        <h2> Pick your meat.</h2>
+                                        <div class="d-flex gap-3">
+                                                <label for="pepperoni">Pepperoni</label><br>
+                                                <input type="checkbox" id="pepperoni" name="pepperoni" value="pepperoni">
+                                        </div>
+                                        <div class="d-flex gap-3">
+                                                <label for="sausage">Sausage</label><br>
+                                                <input type="checkbox" id="sausage" name="sausage" value="sausage">
+                                        </div>
+                                        <div class="d-flex gap-3">
+                                                <label for="bacon">Bacon</label><br>
+                                                <input type="checkbox" id="bacon" name="bacon" value="bacon">
+                                        </div>
+                                        <div class="d-flex gap-3">
+                                                <label for="ham">Ham</label><br>
+                                                <input type="checkbox" id="ham" name="ham" value="ham">
+                                        </div>
 
-                                    <h2> Pick your veg.</h2>
-                                    <input type="checkbox" id="pepperoni" name="pepperoni" value="pepperoni">
-                                    <label for="pepperoni">Pepperoni</label><br>
-                                    <input type="checkbox" id="sausage" name="sausage" value="sausage">
-                                    <label for="sausage">Sausage</label><br>
-                                    <input type="checkbox" id="bacon" name="bacon" value="bacon">
-                                    <label for="bacon">Bacon</label><br>
-                                    <input type="checkbox" id="ham" name="ham" value="ham">
-                                    <label for="ham">Ham</label><br>
+                                        <h2> Pick your veg.</h2>
+                                        <div class="d-flex gap-3">
+                                            <label for="mushrooms">Mushrooms</label><br>
+                                            <input type="checkbox" id="mushrooms" name="mushrooms" value="mushrooms">
+                                        </div>
+                                        <div class="d-flex gap-3">
+                                            <label for="greenpeppers">Green Peppers</label><br>
+                                            <input type="checkbox" id="greenpeppers" name="greenpeppers" value="greenpeppers">
+                                        </div>
+                                        <div class="d-flex gap-3">
+                                            <label for="onions">Onions</label><br>
+                                            <input type="checkbox" id="onions" name="onions" value="onions">
+                                        </div>
+                                        <div class="d-flex gap-3">
+                                            <label for="jalapeno">Jalapeno's</label><br>
+                                            <input type="checkbox" id="jalapeno" name="jalapeno" value="jalapeno">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                     </div>
@@ -252,6 +270,13 @@
         </div>
     </section>
 
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col">
+
+            </div>
+        </div>
+    </footer>
 </div>
 
 

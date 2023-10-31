@@ -47,7 +47,6 @@ h1 {
 .accordion-body{
     display: flex;
     flex-direction: column;
-    flex: 1 0 0;
 }
 
 .btn-outline-secondary{
@@ -66,5 +65,11 @@ h1 {
 .pizzaLinks a{
     color: #ffffff;
 }
+
+.meatsandveg{
+    display: flex;
+    flex-direction: column;
+}
+
 
 
