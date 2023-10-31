@@ -7,6 +7,7 @@
 </head>
 <body>
 <div class="page-wrapper">
+
     <header class="p-3">
         <div class="container-fluid">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
@@ -35,7 +36,7 @@
         </div>
     </header>
 
-    <div class="container-fluid d-flex hero">
+    <section class="container-fluid d-flex hero">
         <div class="row ">
             <div class="col-12">
                 <div class="px-4 py-5 my-5 text-center">
@@ -50,13 +51,13 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <section class="container-fluid pizzaSelection">
         <div class="row">
             <div class="col">
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
 
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#sizeandcrust" type="button" role="tab" aria-controls="sizeandcrust-panel" aria-selected="true">Size & Crust</button>
                     </li>
@@ -68,14 +69,11 @@
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Galactic Toppings</button>
                     </li>
-
                 </ul>
 
                 <div class="tab-content" id="myTabContent">
-
                     <div class="tab-pane fade show active" id="sizeandcrust" role="tabpanel" aria-labelledby="sizeandcrust-tab" tabindex="0">
                         <div class="accordion accordion-flush" id="accordionFlushExample">
-
                             <div class="size-item">
                                 <h2 class="size-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -83,9 +81,7 @@
                                     </button>
                                 </h2>
                                 <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-
                                     <h2> Select your pizza size.</h2>
-
                                     <input type="radio" id="personal" name="size" value="personal">
                                     <label for="personal">Personal</label><br>
                                     <input type="radio" id="small" name="size" value="small">
@@ -96,6 +92,7 @@
                                     <label for="large">Large</label><br>
                                 </div>
                             </div>
+
 
                             <div class="crust-item">
                                 <h2 class="crust-header">
@@ -132,8 +129,9 @@
 
                     <div class="tab-pane fade" id="cheeseandsauce" role="tabpanel" aria-labelledby="cheeseandsauce-tab" tabindex="0">
 
+
                         <div class="accordion accordion-flush" id="cheese">
-                            <div class="accordion-item">
+                            <div class="accordion-item cheese">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                                         Cheese
@@ -146,21 +144,17 @@
                                             <label for="mozzarella">Mozzarella</label><br>
                                             <input type="checkbox" id="mozzarella" name="mozzarella" value="mozzarella" >
                                         </div>
-
-
                                         <h2> Select your cheese amount.</h2>
                                         <select name="cheese-preference" class="cheese-selector">
                                             <option value="light">Light</option>
                                             <option value="regular">Regular</option>
                                             <option value="blasted">Blasted</option>
-
                                         </select>
-
-
-
                                     </div>
                                 </div>
                             </div>
+
+
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
@@ -171,6 +165,8 @@
                                     <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
                                 </div>
                             </div>
+
+
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
@@ -182,7 +178,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
 
                     <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
